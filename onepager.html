@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Restaurant</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="scroll-smooth font-sans text-gray-800">
+
+<!-- Kopfzeile -->
+    <header class="relative h-64 flex items-center justify-center text-white font-style: italic">
+
+        <!-- Hintergrundbild -->
+        <img src="img/Hintergrund2.jpg"class="absolute inset-0 w-full h-full object-cover">
+
+        <!-- Dunkler Overlay (damit Text besser lesbar ist) -->
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+
+        <!-- Text -->
+        <h1 id="Seitenanfang" class="relative text-4xl font-bold">Rice To Meet You - Modern Asian Cuisine</h1>
+
+    </header>
+
+    <!-- Zum hin und her springen zwischen den einzelnen Bereichen -->
+    <nav class="bg-purple-950 text-white flex items-center justify-between p-4 text-lg sticky top-0">
+
+        <!--Bereiche zum hin und her springen zentriert-->
+        <div class="flex justify-center gap-8 mx-auto">
+            <a href="#ueber_uns" class="hover:underline">Über uns</a>
+            <a href="#restaurant" class="hover:underline">Restaurant</a>
+            <a href="#speisekarte" class="hover:underline">Speisekarte</a>
+            <a href="#zeiten" class="hover:underline">Öffnungszeiten</a>
+            <a href="#impressum" class="hover:underline">Impressum</a>
+        </div>
+
+        <!--Button rechts angeordnet  -->
+        <a href="#reservierung" class="bg-purple-500 hover:bg-purple-600 px-5 py-2 rounded-lg font-semibold whitespace-nowrap">Tisch reservieren</a>
+
+    </nav>
+
+    <!-- Hier beginnen die einzelnen Bereiche (über uns, restaurant, Speißekarte usw) -->
+
+
+
+    <!-- "Über uns" - Bereich -->
+
+   <section id="ueber_uns" class="p-10 bg-purple-200 text-center">
+
+    <h2 class="text-4xl font-bold mb-4">Über uns</h2>
+
+    <div class="bg-purple-200 font-bold">
+        <div class="max-w-6xl mx-auto bg-purple-900/40 rounded-3xl shadow-2xl p-10 md:p-16">
+            <img src="img/logo2.png" alt="Logo" class="h-33 w-1/4 mx-auto mb-6">
+            <p>
+                Unser Restaurant "Rice To Meet You" vereint Tradition und Moderne auf eine ganz spezielle Weise.<br>
+                Wir haben es uns zur Aufgabe gemacht regionale Produkte mit der traditionell asiatischen Küche zu fusionieren.<br>
+                In unserem 5.000m² großen Gewächshaus hinter dem Restaurant kultivieren wir Kräuter und Gewürze, die in Deutschland nicht gedeihen, selbst und ganzjährig frisch für unsere Küche.<br>                       
+            </p>
+        </div>
+    </div>
+    </section>
+
+
+
+    <!--"Restaurant" - Bereich-->
+
+    <section id="restaurant" class="p-10 bg-purple-200">
+        <h2 class="text-4xl font-bold mb-4 text-center">Restaurant</h2>
+
+    <div class="bg-purple-200 font-bold">
+        <div class="max-w-6xl mx-auto bg-purple-900/40 rounded-3xl shadow-2xl p-10 md:p-16">
+            <p>
+                  <h1 class="text-2xl font-bold mb-4 text-center">Unser Restaurant seit 2025</h1>     
+            </p>
+            <p>
+                Seit 2025 führen wir ein Restaurant mit viel Leidenschaft und Liebe zum Detail.<br>
+                Unser Haus bietet Platz für bis zu 150 Gäste und eignet sich somit sowohl für gemütliche Abende zu zweit als auch für größere Feiern und Veranstaltungen.<br>
+                Wir legen großen Wert auf eine angenehme Atmosphäre, freundlichen Service und hochwertige Speisen. 
+                Unser Ziel ist es, jedem Gast ein unvergessliches kulinarisches Erlebnis zu bieten.
+            </p>
+        </div>
+
+  </div>
+
+            <div class="bg-purple-200">
+                <div class="flex overflow-x-auto snap-x snap-mandatory w-full h-64 gap-2">
+                <!-- Bild 1 -->
+                    <div class="flex-shrink-0 w-full h-full snap-start">
+                    <img src="img/restaurant1.jpg" class="w-full h-full object-cover" alt="Slide 1">
+                    </div>
+                <!-- Bild 2 -->
+                    <div class="flex-shrink-0 w-full h-full snap-start">
+                    <img src="img/restaurant2.jpg" class="w-full h-full object-cover" alt="Slide 2">
+                    </div>
+                <!-- Bild 3 -->
+                    <div class="flex-shrink-0 w-full h-full snap-start">
+                    <img src="img/gewächshaus.jpg" class="w-full h-full object-cover" alt="Slide 3">
+                    </div>
+                </div>
+
+            </div>
+        
+    </section>
+
+
+    <!--"Speisekarte" - Bereich -->
+
+    <section id="speisekarte" class="p-10">
+        <h2 class="text-4xl font-bold mb-4 text-center">Speisekarte</h2>
+    <div class="max-w-4xl mx-auto space-y-8">
+
+       
+        <!-- Vorspeisen -->
+        <div class="bg-white rounded-2xl shadow overflow-hidden">
+            <img src="img/Ramen.jpg" class="w-full h-56 object-cover">
+
+            <div class="p-6 bg-purple-900/40">
+            <h2 class="text-2xl font-bold mb-4">Vorspeisen</h2>
+
+                <div class="flex justify-between border-b py-2">
+                    <span>Edamame</span><span>5,50 €</span>
+                </div>
+
+                <div class="flex justify-between border-b py-2">
+                    <span>Gyoza</span><span>7,50 €</span>
+                </div>
+
+                <div class="flex justify-between border-b py-2">
+                    <span>Miso Suppe</span><span>5,00 €</span>
+                </div>
+
+                <div class="flex justify-between border-b py-2">
+                    <span>Spring Rolls</span><span>6,50 €</span>
+                </div>
+
+                <div class="flex justify-between py-2">
+                    <span>Kimchi Salad</span><span>6,00 €</span>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Hauptspeien -->
+        <div class="bg-white rounded-2xl shadow overflow-hidden">
+        <img src="img/platte2.jpg" class="w-full h-56 object-cover">
+            <div class="p-6 bg-purple-900/40">
+                <h2 class="text-2xl font-bold mb-4">Hauptspeisen</h2>
+
+                <div class="flex justify-between border-b py-2">
+                    <span>Shoyu Ramen</span><span>12,50 €</span>
+                </div>
+                <div class="flex justify-between border-b py-2">
+                    <span>Teriyaki Bowl</span><span>13,00 €</span>
+                </div>
+                <div class="flex justify-between border-b py-2">
+                    <span>Veggie Wok</span><span>11,50 €</span>
+                </div>
+                <div class="flex justify-between border-b py-2">
+                    <span>Udon Beef</span><span>13,50 €</span>
+                </div>
+                <div class="flex justify-between py-2">
+                    <span>Sushi Plate</span><span>15,00 €</span>
+                </div>
+
+            </div>
+        </div>
+
+    <!-- Desserts -->
+    <div class="bg-white rounded-2xl shadow overflow-hidden">
+    <img src="img/dessert.jpg" class="w-full h-56 object-cover">
+        <div class="p-6 bg-purple-900/40">
+        <h2 class="text-2xl font-bold mb-4">Desserts</h2>
+
+            <div class="flex justify-between border-b py-2">
+                <span>Mochi Eis</span><span>5,50 €</span>
+            </div>
+            <div class="flex justify-between border-b py-2">
+                <span>Matcha Cake</span><span>6,50 €</span>
+            </div>
+            <div class="flex justify-between border-b py-2">
+                <span>Sesam Banane</span><span>5,00 €</span>
+            </div>
+            <div class="flex justify-between border-b py-2">
+                <span>Kokos Pudding</span><span>5,50 €</span>
+            </div>
+            <div class="flex justify-between py-2">
+                <span>Sesam Cookies</span><span>4,50 €</span>
+            </div>
+
+        </div>
+    </div>
+
+  </div>
+    </section>
+
+
+
+    <!--"Öffnungszeiten" - Bereich -->
+
+    <section id="zeiten" class="p-10 bg-purple-200 font-bold">
+    <h2 class="text-4xl mb-10 text-center">Öffnungszeiten</h2>
+
+    <table class="text-gray-800 mx-auto border-separate border-spacing-x-10">
+        <tr>
+            <td>Montag:</td>
+            <td>Ruhetag</td>
+        </tr>
+        <tr>
+            <td>Dienstag:</td>
+            <td>11:00-21:00 Uhr</td>
+        </tr>
+        <tr>
+            <td>Mittwoch:</td>
+            <td>11:00-21:00 Uhr</td>
+        </tr>
+        <tr>
+            <td>Donnerstag:</td>
+            <td>11:00-21:00 Uhr</td>
+        </tr>
+        <tr>
+            <td>Freitag:</td>
+            <td>12:00-23:00 Uhr</td>
+        </tr>
+        <tr>
+            <td>Samstag:</td>
+            <td>12:00-23:00 Uhr</td>
+        </tr>
+        <tr>
+            <td>Sonntag:</td>
+            <td>12:00-23:00 Uhr</td>
+        </tr>
+    </table>
+</section>
+
+
+
+    <!--"Impressum" - Bereich-->
+
+    <section id="impressum" class="p-10 font-bold">
+        <h2 class="text-4xl mb-4">Impressum</h2>
+
+        <div class="flex justify-between">
+            <!--Anschrift (links angeordnet)-->
+            <div>
+            <p>
+                Rice To Meet You<br>
+                Inhaber: Eric Möschwitzer<br>
+                August-Bebel-Str. 5<br>
+                08115 Lichtentanne<br>
+                
+            </div>
+
+            
+
+            <!-- Kontakte (rechts angeordnet) -->
+            <div class="text-left">
+            📞 <span>+49 172 3054082</span><br>
+            📧 <span>eric.moeschwitzer@web.de</span>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="py-10 text-center font-bold">
+    <a href="#top" class="inline-block text-purple-900 hover:text-blue-800 font-medium transition">Zurück zum Seitenanfang</a>
+    </footer>
+
+</body>
+</html>
